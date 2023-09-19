@@ -46,6 +46,10 @@ li > a {
     font-size: 32px;
 }
 
+li > a:hover {
+    color: red;
+}
+
 /* Main Section */
 
 .about-section {
@@ -70,6 +74,11 @@ img.soup-image {
     width: 300px;
     height: 300px;
     display: flex;
+}
+
+img.soup-image:hover {
+	-webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
 }
 
 /* Contact */
@@ -153,3 +162,16 @@ margin-top: -1%;
     font-family: "about-text";
     src: url(./fonts/about-text.ttf);
 }
+
+/* Media Queries*/
+@media screen and (min-width: 1644px) {
+    .contact {
+        margin-bottom: 10%;
+    }
+
+    footer {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+    }
+  }
